@@ -39,6 +39,7 @@
     .carousel-caption {
         height: 750px;
     }
+    
 </style>
 
 <body class="body  ">
@@ -74,7 +75,7 @@
                                                 <div class="box-tab center">
                                                     <ul class="menu-tab tab-title flex justify-center">
                                                         <li class="item-title active">
-                                                            <h4 class="inner">Rent</h4>
+                                                            <h4 class="inner" >Rent</h4>
                                                         </li>
                                                         <li class="item-title style">
                                                             <h4 class="inner"> Buy </h4>
@@ -451,7 +452,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="assets/images/slider/slider-detail-12.jpg" class="d-block w-100"
+                            <img src="assets/images/slider/slider 5.jpg" class="d-block w-100"
                                 style="width:50px; height: 1000px;" alt="...">
                             <!-- <div class="c">
                                 <h5>First slide label</h5>
@@ -459,7 +460,7 @@
                             </div> -->
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/slider/slider-detail-14.jpg" class="d-block w-100"
+                            <img src="assets/images/slider/slider 8.jpg" class="d-block w-100"
                                 style="width:50px; height: 1000px;" alt="...">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
@@ -467,7 +468,7 @@
                             </div> -->
                         </div>
                         <div class="carousel-item">
-                            <img src="assets/images/slider/slider-detail-24.jpg" class="d-block w-100"
+                            <img src="assets/images/slider/slider 9.jpg" class="d-block w-100"
                                 style="width:50px; height: 1000px;" alt="...">
                             <!-- <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>

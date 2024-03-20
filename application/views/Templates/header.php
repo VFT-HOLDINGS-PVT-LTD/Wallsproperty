@@ -68,14 +68,14 @@
                             </div>
                             <div class="content">
                                 <p class="text-color-2">Call us:</p>
-                                <a href="tel:0123456789">
-                                    <h5 class="fw-6 text-color-3">(201) 555-0124</h5>
+                                <a href="tel:0112099977">
+                                    <h5 class="fw-6 text-color-3">011 209 9977</h5>
                                 </a>
                             </div>
                         </div>
                         <!-- Logo Box -->
                         <div class="logo-box d-flex">
-                            <div class="logo"><a href="index.html"><img src="assets/images/logo/wps.jpeg" alt=""
+                            <div class="logo"><a href="#"><img src="assets/images/logo/wps.jpeg" alt=""
                                         width="280" height="80"></a></div>
                         </div>
 
@@ -138,39 +138,39 @@
 						<nav class="main-menu show navbar-expand-md">
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li class="dropdown2 current"><a href="#">Home</a>
-										<ul>
+									<li><a href="#">Home</a></li>
+										<!-- <ul>
 											<li><a href="index.html">Home Page 01</a></li>
 											<li class="current"><a href="home02.html">Home Page 02</a>
 											</li>
 											<li><a href="home03.html">Home Page 03</a></li>
 											<li><a href="home04.html">Home Page 04</a></li>
 											<li><a href="home05.html">Home Page 05</a></li>
-										</ul>
+										</ul> -->
 									</li>
 									<li class="dropdown2"><a href="#">Property</a>
 										<ul>
-											<li class="dropdown2"><a href="#">Property List</a>
-												<ul>
+											<li><a href="#">Rent</a>
+												<!-- <ul>
 													<li><a href="properties-list.html">Property List</a>
 													</li>
 													<li><a href="properties-list-sidebar-v1.html">Property
 															List Sidebar V1</a></li>
 													<li><a href="properties-list-sidebar-v2.html">Property
 															List Sidebar V2</a></li>
-												</ul>
+												</ul> -->
 											</li>
-											<li class="dropdown2"><a href="#">Property Grid</a>
-												<ul>
+											<li><a href="#">Sale</a>
+												<!-- <ul>
 													<li><a href="properties-grid.html">Property Grid</a>
 													</li>
 													<li><a href="properties-grid-sidebar-v1.html">Property
 															Grid Sidebar V1</a></li>
 													<li><a href="properties-grid-sidebar-v2.html">Property
 															Grid Sidebar V2</a></li>
-												</ul>
+												</ul> -->
 											</li>
-											<li class="dropdown2"><a href="#">Property Detail</a>
+											<!-- <li class="dropdown2"><a href="#">Property Detail</a>
 												<ul>
 													<li><a href="property-detail-v1.html">Property
 															Detail V1</a></li>
@@ -189,10 +189,10 @@
 													<li><a href="properties-map-v3.html">Property Half
 															Map V3</a></li>
 												</ul>
-											</li>
+											</li> -->
 										</ul>
 									</li>
-									<li class="dropdown2"><a href="#">Page</a>
+									<!-- <li class="dropdown2"><a href="#">Page</a>
 										<ul>
 											<li><a href="about.html">About Us</a></li>
 											<li><a href="faq.html">Faq's</a></li>
@@ -222,16 +222,16 @@
 											</li>
 											<li><a href="dashboard.html">Dashboard</a></li>
 										</ul>
-									</li>
-									<li class="dropdown2"><a href="#">Blog</a>
-										<ul>
+									</li> -->
+									<li><a href="#">About Us</a>
+										<!-- <ul>
 											<li><a href="blog.html">Blog List</a></li>
 											<li><a href="blog-grid.html">Blog Grid</a></li>
 											<li><a href="blog-detail.html">Blog Detail</a></li>
-										</ul>
+										</ul> -->
 									</li>
 
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="#">Contact</a></li>
 								</ul>
 							</div>
 						</nav>
