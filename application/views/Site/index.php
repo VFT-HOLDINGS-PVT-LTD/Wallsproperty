@@ -501,18 +501,7 @@
                                             data-tooltip="<?php echo count($data_set_cat_sale); ?> Property">
                                             <h5 class="inner"> Sale </h5>
                                         </li>
-                                        <!-- <li class="item-title hv-tool" data-tooltip="5 Property">
-                                            <h5 class="inner ">Apartments</h5>
-                                        </li>
-                                        <li class="item-title hv-tool" data-tooltip="7 Property">
-                                            <h5 class="inner"> Office </h5>
-                                        </li>
-                                        <li class="item-title hv-tool" data-tooltip="6 Property">
-                                            <h5 class="inner">Villa</h5>
-                                        </li>
-                                        <li class="item-title hv-tool" data-tooltip="3 Property">
-                                            <h5 class="inner"> Bungalow </h5>
-                                        </li> -->
+                                      
                                     </ul>
                                 </div>
 
