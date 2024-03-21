@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-<?php $this->load->view('Site/CSS_JS/css.php'); ?>
+    <?php $this->load->view('Site/CSS_JS/css.php'); ?>
 
 </head>
 <style>
@@ -39,7 +39,48 @@
     .carousel-caption {
         height: 750px;
     }
-    
+
+    .flat-featured .flat-tabs .tab-title li:hover h5,
+    .flat-featured .flat-tabs .tab-title li.active h5 {
+        font-weight: 600;
+        color: #12114e;
+    }
+
+    .button-go::before {
+        z-index: -1;
+        background-color: #12114e;
+    }
+
+    .widget-menu .box-menu li a::before {
+        content: "\f105";
+        font-family: "Font Awesome 5 Pro";
+        color: green;
+        font-size: 14px;
+        margin-right: 11px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+    .widget-menu .box-menu li:hover a {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: Green;
+    }
+
+    .mobile-button::before,
+    .mobile-button::after,
+    .mobile-button span {
+        background-color: #12114e;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        transition: all ease 0.3s;
+    }
 </style>
 
 <body class="body  ">
@@ -48,10 +89,10 @@
     <div id="wrapper">
         <div id="pagee" class="clearfix">
 
-    		<?php $this->load->view('Templates/header.php'); ?>
+            <?php $this->load->view('Templates/header.php'); ?>
 
-           <!-- slider -->
-		   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <!-- slider -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <section class="slider">
                     <ol class="carousel-caption">
                         <div class="slider-item">
@@ -75,7 +116,7 @@
                                                 <div class="box-tab center">
                                                     <ul class="menu-tab tab-title flex justify-center">
                                                         <li class="item-title active">
-                                                            <h4 class="inner" >Rent</h4>
+                                                            <h4 class="inner">Rent</h4>
                                                         </li>
                                                         <li class="item-title style">
                                                             <h4 class="inner"> Buy </h4>
@@ -502,7 +543,7 @@
                                             data-tooltip="<?php echo count($data_set_cat_sale); ?> Property">
                                             <h5 class="inner"> Sale </h5>
                                         </li>
-                                      
+
                                     </ul>
                                 </div>
 
@@ -1885,11 +1926,12 @@
                             <div class="wrap-contact">
                                 <div class="box-title flex justify-space">
                                     <div class="inner">
-                                        <div class="title-ct fs-30 fw-7">Contact us </div>
+
+                                        <div class="title-ct fs-30 fw-7">Contact us <img src="assets/images/icon/call.svg" alt="icon" style="width:45px; margin-left: 20px;"></div>
                                         <p style="margin-top: 20px;">We will respond as soon as we receive your message.
                                         </p>
                                     </div>
-                                    <div class="icon-message animate-zoom">
+                                    <!-- <div class="icon-message animate-zoom">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -1899,7 +1941,7 @@
                                                 d="M30.4872 7.77051H21.4713C21.1724 7.77051 20.8857 7.88925 20.6744 8.10062C20.463 8.31199 20.3442 8.59867 20.3442 8.89759C20.3442 9.19651 20.463 9.48319 20.6744 9.69456C20.8857 9.90593 21.1724 10.0247 21.4713 10.0247H30.4876C30.6356 10.0246 30.7821 9.99547 30.9189 9.9388C31.0556 9.88213 31.1798 9.79909 31.2845 9.69441C31.3891 9.58973 31.4721 9.46547 31.5287 9.32871C31.5854 9.19196 31.6145 9.04539 31.6145 8.89738C31.6144 8.74937 31.5852 8.60282 31.5286 8.46608C31.4719 8.32935 31.3889 8.20512 31.2842 8.10048C31.1795 7.99584 31.0553 7.91284 30.9185 7.85622C30.7817 7.79961 30.6352 7.77048 30.4872 7.77051ZM30.4872 12.2784H21.4713C21.1724 12.2784 20.8857 12.3972 20.6744 12.6085C20.463 12.8199 20.3442 13.1066 20.3442 13.4055C20.3442 13.7044 20.463 13.9911 20.6744 14.2025C20.8857 14.4138 21.1724 14.5326 21.4713 14.5326H30.4876C30.6356 14.5326 30.7821 14.5034 30.9189 14.4467C31.0556 14.3901 31.1798 14.307 31.2845 14.2023C31.3891 14.0976 31.4721 13.9734 31.5287 13.8366C31.5854 13.6999 31.6145 13.5533 31.6145 13.4053C31.6144 13.2573 31.5852 13.1107 31.5286 12.974C31.4719 12.8373 31.3889 12.713 31.2842 12.6084C31.1795 12.5038 31.0553 12.4208 30.9185 12.3641C30.7817 12.3075 30.6352 12.2784 30.4872 12.2784ZM9.52049 22.5163C9.38549 22.5605 9.27258 22.6505 9.16008 22.7409C8.95716 22.9655 8.82174 23.2605 8.82174 23.553C8.82174 23.8455 8.95674 24.1384 9.16008 24.3409C9.38549 24.5655 9.65591 24.6801 9.94883 24.6801C10.1063 24.6801 10.2647 24.6338 10.3997 24.5897C10.5351 24.5434 10.6476 24.453 10.7601 24.3409C10.963 24.1384 11.0984 23.8455 11.0984 23.553C11.0984 23.2605 10.963 22.9651 10.7601 22.7409C10.4447 22.4484 9.94883 22.3359 9.52049 22.5163ZM14.9076 22.5163C14.4792 22.3359 13.9834 22.448 13.668 22.7409C13.4651 22.9655 13.3526 23.2605 13.3526 23.553C13.3526 23.8455 13.4651 24.1384 13.668 24.3409C13.7805 24.453 13.8934 24.5434 14.0284 24.5897C14.1863 24.6338 14.3213 24.6801 14.4792 24.6801C14.7726 24.6801 15.043 24.5655 15.2684 24.3409C15.4713 24.1384 15.6067 23.8455 15.6067 23.553C15.6067 23.2605 15.4713 22.9651 15.2684 22.7409C15.1555 22.6509 15.043 22.5605 14.9076 22.5163ZM19.4159 22.5163C19.1455 22.4018 18.8297 22.4018 18.5367 22.5163C18.4017 22.5605 18.2888 22.6505 18.1763 22.7409C17.9734 22.9655 17.838 23.2605 17.838 23.553C17.838 23.8455 17.973 24.1384 18.1763 24.3409C18.4017 24.5655 18.6722 24.6801 18.9655 24.6801C19.123 24.6801 19.2809 24.6338 19.4163 24.5897C19.5517 24.5434 19.6642 24.453 19.7772 24.3409C19.9801 24.1384 20.0926 23.8455 20.0926 23.553C20.0926 23.2605 19.9797 22.9651 19.7772 22.7409C19.6638 22.6509 19.5513 22.5605 19.4159 22.5163ZM7.70716 11.1518H9.96133C10.2602 11.1518 10.5469 11.033 10.7583 10.8216C10.9697 10.6103 11.0884 10.3236 11.0884 10.0247C11.0884 9.72575 10.9697 9.43908 10.7583 9.22771C10.5469 9.01634 10.2602 8.89759 9.96133 8.89759H7.70716C7.40824 8.89759 7.12156 9.01634 6.91019 9.22771C6.69882 9.43908 6.58008 9.72575 6.58008 10.0247C6.58008 10.3236 6.69882 10.6103 6.91019 10.8216C7.12156 11.033 7.40824 11.1518 7.70716 11.1518ZM32.5013 29.1838H30.2472C29.9482 29.1838 29.6616 29.3026 29.4502 29.514C29.2388 29.7253 29.1201 30.012 29.1201 30.3109C29.1201 30.6098 29.2388 30.8965 29.4502 31.1079C29.6616 31.3193 29.9482 31.438 30.2472 31.438H32.5013C32.8003 31.438 33.0869 31.3193 33.2983 31.1079C33.5097 30.8965 33.6284 30.6098 33.6284 30.3109C33.6284 30.012 33.5097 29.7253 33.2983 29.514C33.0869 29.3026 32.8003 29.1838 32.5013 29.1838Z"
                                                 fill="#FFA920" />
                                         </svg>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div id="comments" class="comments">
                                     <div class="respond-comment">
@@ -1912,36 +1954,37 @@
                                                     name</label>
                                                 <input type="text" class="tb-my-input" name="txt_name" id="txt_name"
                                                     placeholder="Your name" required="">
-                                                <img class="img-icon" style="margin-top: 20px;"
-                                                    src="assets/images/icon/contact-name.svg" alt="images">
+                                                <img class="img-icon" style="margin-top: 20px; width:15px;"
+                                                    src="assets/images/icon/user.svg" alt="images" >
                                             </fieldset>
                                             <div class="text-wrap flex">
                                                 <fieldset class="email-wrap style-text">
                                                     <label class="font-2 fw-8 fs-16">Email</label>
                                                     <input type="email" class="tb-my-input" id="txt_mail"
                                                         name="txt_mail" placeholder="Email" required="">
-                                                    <img class="img-icon img-email"
-                                                        src="assets/images/icon/contact-email.svg" alt="images">
+                                                    <img class="img-icon img-email" style="width:17px;"
+                                                        src="assets/images/icon/email.svg" alt="images" >
                                                 </fieldset>
                                                 <fieldset class="phone-wrap style-text">
                                                     <label class="font-2 fw-8 fs-16">Phone</label>
                                                     <input type="tel" class="tb-my-input" id="txt_mobile"
                                                         name="txt_mobile" placeholder="Phone" required="">
-                                                    <img class="img-icon" src="assets/images/icon/contact-phone.svg"
+                                                    <img class="img-icon" style="width:17px;" src="assets/images/icon/call.svg"
                                                         alt="images">
                                                 </fieldset>
                                             </div>
                                             <div class="wd-find-select">
                                                 <label class="font-2 fw-8 fs-16" for="property-type">Property
                                                     type</label>
-                                                    <select id="property-type" name="property-type" class="nice-select relative">
-                                                        <option data-value class="option selected">Choose</li>
-                                                        <option value="land">Land</option>
-                                                        <option value="rent">Rent</option>
-                                                    </select>
-                                                    <!-- <img class="img-icon icon-style"
-                                                        src="assets/images/icon/contact-choose.svg" alt="images"> -->
-                                    
+                                                <select id="property-type" name="property-type"
+                                                    class="nice-select relative">
+                                                    <option data-value class="option selected">Choose</li>
+                                                    <option value="land">Land</option>
+                                                    <option value="rent">Rent</option>
+                                                </select>
+                                                <!-- <img class="img-icon icon-style" style="width:17px;"
+                                                        src="assets/images/icon/home.svg" alt="images"> -->
+
                                             </div>
                                             <fieldset class="message-wrap">
                                                 <label class="font-2 fw-8 fs-16">Message</label>
