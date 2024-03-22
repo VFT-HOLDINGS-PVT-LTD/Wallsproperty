@@ -16,6 +16,12 @@ class Contact_us extends CI_Controller {
 
         $this->load->model('Db_model', '', TRUE);
     }
+    public function index() {
+
+        echo "ok";
+
+        // $this->load->view('Site/vw_Sign_In.php', $data);
+    }
 
     public function contact() {
 

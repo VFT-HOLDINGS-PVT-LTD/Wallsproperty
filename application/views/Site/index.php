@@ -1927,7 +1927,9 @@
                                 <div class="box-title flex justify-space">
                                     <div class="inner">
 
-                                        <div class="title-ct fs-30 fw-7">Contact us <img src="assets/images/icon/call.svg" alt="icon" style="width:45px; margin-left: 20px;"></div>
+                                        <div class="title-ct fs-30 fw-7">Contact us <img
+                                                src="assets/images/icon/call.svg" alt="icon"
+                                                style="width:45px; margin-left: 20px;"></div>
                                         <p style="margin-top: 20px;">We will respond as soon as we receive your message.
                                         </p>
                                     </div>
@@ -1955,7 +1957,7 @@
                                                 <input type="text" class="tb-my-input" name="txt_name" id="txt_name"
                                                     placeholder="Your name" required="">
                                                 <img class="img-icon" style="margin-top: 20px; width:15px;"
-                                                    src="assets/images/icon/user.svg" alt="images" >
+                                                    src="assets/images/icon/user.svg" alt="images">
                                             </fieldset>
                                             <div class="text-wrap flex">
                                                 <fieldset class="email-wrap style-text">
@@ -1963,14 +1965,14 @@
                                                     <input type="email" class="tb-my-input" id="txt_mail"
                                                         name="txt_mail" placeholder="Email" required="">
                                                     <img class="img-icon img-email" style="width:17px;"
-                                                        src="assets/images/icon/email.svg" alt="images" >
+                                                        src="assets/images/icon/email.svg" alt="images">
                                                 </fieldset>
                                                 <fieldset class="phone-wrap style-text">
                                                     <label class="font-2 fw-8 fs-16">Phone</label>
                                                     <input type="tel" class="tb-my-input" id="txt_mobile"
                                                         name="txt_mobile" placeholder="Phone" required="">
-                                                    <img class="img-icon" style="width:17px;" src="assets/images/icon/call.svg"
-                                                        alt="images">
+                                                    <img class="img-icon" style="width:17px;"
+                                                        src="assets/images/icon/call.svg" alt="images">
                                                 </fieldset>
                                             </div>
                                             <div class="wd-find-select">
