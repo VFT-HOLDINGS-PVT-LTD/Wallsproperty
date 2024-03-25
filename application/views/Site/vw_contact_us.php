@@ -333,7 +333,7 @@
                                 <div id="comments" class="comments">
                                     <div class="respond-comment">
                                         <form class="comment-form form-submit"
-                                            action="<?php echo base_url(); ?>Contact_us/contact_user" method="POST"
+                                            action="<?php echo base_url(); ?>Contact_us/contact" method="POST"
                                             id="frm_register" name="frm_register" accept-charset="utf-8"
                                             novalidate="novalidate">
                                             <fieldset class="name-wrap">
