@@ -89,9 +89,8 @@
     <div id="wrapper">
         <div id="pagee" class="clearfix">
 
-            <?php $this->load->view('Templates/header.php'); ?>
+            <?php $this->load->view('Templates/header1.php'); ?>
 
-            
 
             <section class="flat-contact  page-contact relative" >
                 <div class="container">

@@ -25,9 +25,6 @@ class Contact_us extends CI_Controller {
 
     public function contact() {
 
-
-
-
         $this->load->view('Site/vw_contact_us.php');
     }
 

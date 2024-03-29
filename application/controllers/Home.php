@@ -204,4 +204,9 @@ class Home extends CI_Controller {
         redirect(base_url() . ''); //*********Redirect form
     }
 
+    public function property(){
+        $data['data_set_cat_pro'] = $this->Db_model->getfilteredData("SELECT * FROM `tbl_ads` WHERE `Ad_sub_Cat_ID` = '27'");
+        $this->load->view('Site/vw_properties.php',$data);
+    }
+
 }
