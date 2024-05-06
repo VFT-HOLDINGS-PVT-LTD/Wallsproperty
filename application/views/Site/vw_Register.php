@@ -174,16 +174,16 @@ $User_Name = $currentUser[0]->Users_Name;
 
                     </div> -->
 
-                    <section id="main" class="clearfix user-page">
+                    <section id="main" class="clearfix user-page" style="background-color: white;">
                         <div class="container">
                             <div class="row">
                                 <!-- user-login -->
-                                <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                                <div class="col-sm-6 col-md-12">
                                     <div class="user-account">
                                         <h2>Create a Account</h2>
                                         <form action="<?php echo base_url(); ?>Register/Register_user" method="POST"
                                             id="frm_register" name="frm_register">
-                                            <div class="form-group">
+                                            <div class="form-group">#
                                                 <input type="text" id="txt_name" name="txt_name" required="required"
                                                     class="form-control" placeholder="Name">
                                             </div>

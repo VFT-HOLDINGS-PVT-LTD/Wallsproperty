@@ -174,7 +174,7 @@
     left: 245px;
   }
   .sidebar-enable .hamburger-icon span {
-    background-color: #FFA920;
+    background-color: #12114e;
     transition: all 0s ease;
   }
 }
@@ -499,6 +499,7 @@
   .main-header.home2 .mobile-button {
     top: -110%;
     transform: translateY(-100%);
+		margin-top: -8px;
   }
   .wrap-top .header-account .flat-bt-top {
     display: none;
@@ -518,7 +519,7 @@
     padding-bottom: 80px;
   }
   .tf-section {
-    padding: 80px 0;
+    padding: 0px 0;
   }
   .flat-title-page.inner {
     padding: 100px 0px 93px 0px;
@@ -1230,7 +1231,7 @@
     width: 100%;
   }
   .slider .slider-item .content h1 {
-    font-size: 46px;
+    font-size: 31px;
     line-height: 54px;
   }
   .slider .flat-tabs .tab-title {

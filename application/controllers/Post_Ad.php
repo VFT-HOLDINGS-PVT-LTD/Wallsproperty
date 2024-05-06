@@ -34,6 +34,7 @@ class Post_Ad extends CI_Controller {
 
         $data['data_set_city'] = $this->Db_model->getfilteredData('SELECT * FROM `tbl_city`');
 
+
 //
 //        $mobile = $this->agent->is_mobile();
 //        if ($mobile) {
@@ -67,6 +68,8 @@ class Post_Ad extends CI_Controller {
         $data['data_dist'] = $this->Db_model->getData('DST_ID,DST_Name', 'tbl_districts');
         $data['data_l_type'] = $this->Db_model->getData('LND_TP_ID,LND_TP_Name', 'tbl_land_types');
 
+		$data['user_data'] = $this->Db_model->getfilteredData('SELECT * FROM `tbl_users` WHERE Users_Name != "admin"');
+
 
         $data['cat'] = $cmb_category;
         $data['sb_cat'] = $cmb_sub_category;
@@ -74,7 +77,7 @@ class Post_Ad extends CI_Controller {
 
         $data['sb_cat_nm'] = $this->Db_model->getfilteredData("select Ad_sub_Cat_ID,Ad_Sub_Cat_Name from tbl_ad_sub_category where Ad_sub_Cat_ID = $cmb_sub_category ");
         $data['cat_img'] = $this->Db_model->getfilteredData("SELECT Ad_Cat_ID,Image,Ad_Cat_Name FROM tbl_ad_category where Ad_Cat_ID = $cmb_category ");
-//        var_dump($data);die;
+		//        var_dump($data);die;
 
 
 
@@ -116,9 +119,6 @@ class Post_Ad extends CI_Controller {
             $this->load->view('Site/vw_Post_Ad_Pst_electronic.php', $data);
         }
         
-        
-
-        
     }
 
     public function Publish_Post() {
@@ -136,6 +136,7 @@ class Post_Ad extends CI_Controller {
 
         $currentUser = $this->session->userdata('login_user');
         $User = $currentUser[0]->U_ID;
+
 
         var_dump($date, $time_ps, $date_ps);
 
@@ -501,7 +502,7 @@ class Post_Ad extends CI_Controller {
             'Brand_Condition' => $Condition,
             'Model' => $Model,
             'Year' => $M_Year,
-            'U_ID' => $User,
+            // 'U_ID' => $User,
             'CND_ID' => $Condition,
 //            'BD_TP_ID' => $this->input->post('txt_warranty'),
             'TRNS_ID' => $Transmission,
@@ -874,7 +875,7 @@ class Post_Ad extends CI_Controller {
 //            'Brand_Name_Oth' => $Brd_name,
             'Brand_Condition' => $Condition,
 //            'Model' => $Model,
-            'U_ID' => $User,
+            // 'U_ID' => $User,
             'CND_ID' => $Condition,
 //            'BD_TP_ID' => $this->input->post('txt_warranty'),
             'Description' => $Description,
@@ -1298,7 +1299,8 @@ class Post_Ad extends CI_Controller {
         $time_ps = date_format($date, 'H:i:s');
 
         $currentUser = $this->session->userdata('login_user');
-        $User = $currentUser[0]->U_ID;
+        // $User = $currentUser[0]->U_ID;
+		$User = $this->input->post('cmb_name');
 
         $cmb_category = $this->input->post('txt_cat');
         $cmb_sub_category = $this->input->post('txt_sub_cat');

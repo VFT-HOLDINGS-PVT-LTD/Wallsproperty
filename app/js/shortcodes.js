@@ -232,7 +232,7 @@
                 size: 68,
                 scaleColor: false,
                 barColor: '#FFF5E0',
-                trackColor: '#FFA920',
+                trackColor: '#12114e',
                 animate: 5000,
                 onStep: function (from, to, percent) {
                     $(this.el).find('.percent').text(Math.round(percent));

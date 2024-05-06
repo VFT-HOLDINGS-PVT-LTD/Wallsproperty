@@ -10763,7 +10763,7 @@ a:focus {
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle=collapse]::after {
-	color: rgba(255, 255, 255, .5)
+	color: rgb(0 0 0)
 }
 
 .sidebar-dark .nav-item.active .nav-link {
@@ -10779,7 +10779,7 @@ a:focus {
 }
 
 .sidebar-dark #sidebarToggle::after {
-	color: rgba(255, 255, 255, .5)
+	color: rgb(255 255 255)
 }
 
 .sidebar-dark #sidebarToggle:hover {

@@ -19,8 +19,6 @@ $User_Name = $currentUser[0]->Users_Name;
 
         <!--<link href="<?php echo base_url(); ?>assets/vendor/datepicker/css/datepicker.css" type="text/css" rel="stylesheet">  Datepicker -->
 
-
-
         <style>
             body
             {
@@ -124,40 +122,24 @@ $User_Name = $currentUser[0]->Users_Name;
                                         <thead>
                                             <tr style="color: #000000">
                                                 <th>ID</th>
-                                                <th>User</th>
+												<th>Name/UserId</th>
+                                                <th>Titel</th>
                                                 <th>Property</th>
                                                 <th>Location</th>
                                                 <th>Date</th>
                                                 <th>Email</th>
                                                 <th>Contact</th>
                                                 <th>Image</th>
-
-
-
-
-
-
                                                 <th>Approve</th>
-
-
-
-
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <?php
                                             foreach ($data_set_all_ads as $data) {
                                                 ?>
-
-
-
                                                 <tr style="color: #000000" class='odd gradeX'>
-
-
-
                                                     <td width='50' ><?php echo $data->AD_ID ?></td>
-
-
+                                                    <td width='100' style='font-weight: bold'><?php echo $data->Users_Name ?> - <?php echo $data->U_ID ?></td>
                                                     <td width='100' style='font-weight: bold'><?php echo $data->Ad_Title ?></td>
                                                     <td width='100' style='font-weight: bold'><?php echo $data->Ad_Sub_Cat_Name ?></td>
                                                     <td width='100' style='font-weight: bold'><?php echo $data->DST_Name ?></td>
@@ -165,33 +147,18 @@ $User_Name = $currentUser[0]->Users_Name;
                                                     <td width='100'><?php echo $data->Email ?></td>
                                                     <td width='100'><?php echo $data->Phone_No ?></td>
                                                     <td width='100'><img style="width: 80px;" src="<?php echo base_url(); ?>assets/Ad_Images/<?php echo $data->Img_Folder ?>/<?php echo $data->IMG1 ?>" ></td>
-
-
-
-
-
-                                                    <td width='10'>
-                                                        <a class=' btn btn-success ' style=""  data-getadid="<?php echo $data->AD_ID ?>"  href='<?php echo base_url(); ?>Ads/pending_approve/<?php echo $data->AD_ID ?>'> Approve </a>
+                                                    <td width='100'>
+                                                        <a class='btn btn-success col-12' data-getadid="<?php echo $data->AD_ID ?>"  href='<?php echo base_url(); ?>Ads/pending_approve/<?php echo $data->AD_ID ?>'> Approve </a> <br><br>
+														<!-- <a class='btn btn-danger col-12' data-getadid="<?php echo $data->AD_ID ?>"  href='<?php echo base_url(); ?>Ads/pending_reject/<?php echo $data->AD_ID ?>'> Reject </a> -->
                                                     </td>
-
-
-
-
                                                 </tr>
-
-
-
-<?php } ?>
+											<?php } ?>
                                         </tbody>
                                     </table>
                                     <div class="panel-footer"></div>
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </div>
                     <!-- /.container-fluid -->
 

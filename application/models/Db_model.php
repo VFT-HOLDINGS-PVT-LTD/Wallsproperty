@@ -73,7 +73,6 @@ class db_model extends CI_Model
 
     function get_blogs($limit, $offset)
     {
-
         if ($offset > 0) {
             $offset = ($offset - 1) * $limit;
         }

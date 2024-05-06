@@ -17,5 +17,5 @@
 	integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
 	crossorigin="anonymous"></script>
 <!-- Favicon and Touch Icons  -->
-<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/Favicon.png">
-<link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>assets/images/logo/Favicon.png">
+<link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/wpsTopLogo.png">
+<link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>assets/images/logo/wpsTopLogo.png">

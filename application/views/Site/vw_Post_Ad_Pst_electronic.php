@@ -215,7 +215,7 @@
                                                 <input type="text" required="" id="txt_brand" name="txt_brand" class="form-control" placeholder="Ex: Samsung">
                                             </div>-->
                                             <label class="col-sm-3 label-title">Title<span class="required">*</span></label>
-                                            <div class="col-sm-9">
+                                            <div class="col-sm-12">
                                                 <input type="text" required="" id="txt_title" name="txt_title" class="form-control" placeholder="Short Title (Ex: Samsung S20 64GB / Sony 32 Inch Smart TV)">
                                             </div>
 
